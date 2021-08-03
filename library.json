@@ -1,0 +1,25 @@
+{
+    "name": "http-parser",
+    "version": "2.9.4",
+    "description": "http request/response parser for c",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nodejs/http-parser.git"
+    },
+    "license": "MIT",
+    "export": {
+        "include": ["http_parser.[ch]"]
+    },
+    "examples": [
+        {
+            "name": "README",
+            "base": ".",
+            "files": ["README.md"]
+        }
+    ],
+    "build": {
+        "includeDir": ".",
+        "srcDir": ".",
+        "srcFilter": "+<http_parser.c>"
+    }
+}
